@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<!--https://fontello.com/-->
+<head>
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <style>
+        body{
+/*     유니코드로 지정할때 필요       font-family: "fontello";*/
+            color: powderblue;
+            font-size: 100px;
+        }
+        #test:before{
+/*            A라는 텍스트 앞(before)에 s문자생성*/
+            content: "s"
+            color:red;
+            font-size: 30px
+        }
+        #test:after{
+            content: "e"
+        }
+        #git{
+            font-family: "fontello";
+        }
+    </style>
+</head>
+<body>
+<!--   브라우저에서는 A로 보임 html에서 폰텔로의 앞의값이 0일때 &#으로 변경
+    &#65;<br>
+    &#xe804
+-->
+   <div id="test">
+       A
+   </div>
+   <div id="git">&#xe809</div>
+    <i class="icon-emo-sunglasses animate-spin"></i>
+</body>
+</html>
