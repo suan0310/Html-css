@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    /* 하나의 태그에서 여러가지 디자인이 중첩됬을떄 cascading의 규칙
+    구체적인 순서
+    1.style attribute > 2.id selector > 3.class selector > 4.tag selector
+    우선순위를 무시하는 방법 : !important;
+    li{color:red; !important;}
+    */
+    <style>
+      li{color:red;}
+      #idsel{color:blue;}
+      .classsel{color:green;}
+    </style>
+  </head>
+    <body>
+      <ul>
+        <li>html</li>
+        <li id="idsel" class="classsel"
+        style="color:powderblue">css</li>
+        <li>javascript</li>
+      </ul>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+/* 선택자 공부 팁 gooleimage에서 CSS Cheat Sheet 검색*/
+<html>
+  <head>
+    <style >
+      ul li{  /* ul 밑에있는 모든 li*/
+        color: red;
+      }
+      #lecture>li{  /* ol의 직계자손만 */
+        border:1px solid red;
+        color:blue;
+      }
+      ul,ol{ /* ul과 ol */
+        background-color: powderblue;
+      }
+    </style>
+    <body>
+      <ul>
+        <li>HTML</li>
+        <li>CSS
+        </li>
+        <li>JavaScript</li>
+      </ul>
+      <ol id="lecture">
+        <li>HTML</li>
+        <li>CSS
+          <ol>
+            <li>selector</li>
+            <li>declaration</li>
+          </ol>
+        </li>
+        <li>JavaScript</li>
+      </ol>
+  </head>
+    </body>
+</html>

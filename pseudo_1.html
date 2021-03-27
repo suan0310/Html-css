@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style >
+    a:link{
+      color:black;
+    }
+    a:visited{/*  일부속성만 가능*/
+      color:red;
+    }
+    a:hover{  /* 마우스를 올려놓으면 컬러가 yellow로 */
+      color:yellow;
+    }
+      a: active{
+        color:green;
+      }
+      a:focus{  /*  페이지에서 tap키를 누르면 파란색 박스가 나오는 부분.가장 뒤에 넣는것이 좋음*/
+        color:white;
+      }
+      input:focus{
+        background-color: black;
+        color:white;
+      }
+    </style>
+    <body>
+      <a href="http://opentutorials.org">방문함</a>
+      <a href="http://a.a">방문안함</a>
+      <input type="text">
+  </head>
+    </body>
+</html>

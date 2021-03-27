@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #parent,#other{
+            border:5px solid tomato;           
+        }
+        #grand{
+            position: relative;
+        }
+        #me{
+            background-color: black;
+            color: white;
+            position : absolute;
+            left:0;
+            top:0;
+        }
+    </style>
+</head>
+    <body>
+<!--
+        id가 other 옆에 id값이parent 안에 id me만들기
+        #other+#parent>#me
+-->
+   <div id="other">other</div>
+   <div id="grand">
+     <div id="parent">
+          parent
+           <div id="me">me</div>
+       </div>
+   </div>
+    </body>
+</html>

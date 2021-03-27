@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html{border:1px solid:gray;}
+        div{border:5px solid tomato;
+            margin:10px;
+        }
+        #me{
+            position: relative;
+/*            relative를 static으로 변경하면 left,top속성 무시*/
+            left:100px;
+            top:100px;
+        }
+    </style>
+</head>
+    <body>
+<!--
+        id가 other 옆에 id값이parent 안에 id me만들기
+        #other+#parent>#me
+-->
+   <div id="other">other</div>
+   <div id="parent">
+      parent
+       <div id="me">me</div>
+   </div>
+    </body>
+</html>
