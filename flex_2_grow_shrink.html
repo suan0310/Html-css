@@ -1,0 +1,46 @@
+<!doctype>
+<!--html>head>style^body>-->
+<html>
+<head>
+    <style>
+        .container{
+            background-color: powderblue;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .item{
+            background-color: tomato;
+            color: white;
+            border: 1px solid white;
+/*            각각의 엘리먼트들에게 grow값(커지게)하면 ->1을주면 각각의 엘리먼트들이 길이를 나눠가짐*/
+            flex-grow: 1;
+        }
+        .item:nth-child(1){
+            flex-basis: :150px;
+            flex-shrink: 1; /*0으로주면 창을 줄여도 크기가 줄어들지 않음/*
+        }
+        .item:nth-child(2){
+/*            한곳만 더 자리를 주고 싶을때*/
+            flex-grow: 2;
+/*            flex-basis: 200px;*/
+            
+        }
+    </style>
+</head>
+    <body>
+<!--
+       화면 전체를 쓰는 특성을 가진 태그 -> 블럭레벨엘리먼트
+       블럭엘리먼트를 쓰려면 먼저 display 속성값을 준다-->
+-->
+        <div class="container">
+<!--            .item{$}*5-->
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>    
+    </body>
+</html>

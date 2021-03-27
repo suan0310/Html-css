@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            padding-top: 30px;
+        }
+        #parent,#other{
+            border:5px solid tomato;           
+        }
+        #large{
+            height: 10000px;
+            background-color: tomato;
+        }
+        #me{
+            background-color: black;
+            color: white;
+            position : fixed;
+/*            #me가 화면에 fixed 되어서 완전히 독립, 
+            스크롤을 내려도 계속 창에 유지(스크롤로 부터 완전히 독립) */
+            left:0;    
+            bottom:0;
+            width: 100%;
+            text-align: center; 
+/*            하단 중앙에 고정 */
+            
+        }
+    </style>
+</head>
+    <body>
+<!--
+        id가 other 옆에 id값이parent 안에 id me만들기
+        #other+#parent>#me
+-->
+   <div id="other">other</div>
+     <div id="parent">
+          parent
+           <div id="me">me</div>
+   </div>
+    </body>
+</html>
