@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style >
+
+    li{
+      color:red;
+      /*  li : 선택자
+       color:red;  선언
+       color 속성
+       : 속성과 속성값을 구분해주는 구분자
+       red 속성
+       ; 선언과 선언을 구분해주는 구분자 */
+      text-decoration:underline
+    }
+    #select{  #id 불러오기
+      font-size: 100px;
+    }
+    #active{
+      text-decoration: line-through;
+    }
+    .deactive{ 클래스 불러오기
+      text-decoration: underline;
+    }
+    /* class - (같은 태그뿐만아니라 다른태그도)그룹핑 or 개개인 / 여러번 써야한다면 class사용
+       id - id 이름이 select였다면 다시는 등장하면 안됨*/
+  </style>
+</head>
+    <body>
+      <ul>
+        <li id="active">HTML</li>
+        <li id="select">CSS</li>
+        <li class="deactive">JavaScript</li>
+      </ul>
+    </body>
+</html>
+<!-- gooleing : css selector 개념을 시각적으로 확인할때 -->
