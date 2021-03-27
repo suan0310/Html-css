@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<!--
+    transition?
+    css여러가지 속성들이 바뀌었을때 그 속성들을 부드럽게 전환해주는 역할
+   ex) font-size: 10rem; -> 100으로 변경됬을때 자연스러운 전환을 보여줌
+   
+-->
+<head>
+    <style>
+        a{
+            font-size: 3rem;
+            
+/*            transform의 효과는 엘리먼트(a)가 block엘리먼트이거나 inline-block일 경우에만 동작*/
+            display: inline-block;
+            
+/*            a태그의 대해서 모든 효과를 효과가 일어났을 때 장면전환이 일어난다
+            transition-property: all 0.1s;*/
+            transition: font-size 1s, transform 0.1s;
+            
+/*            시간지연 효과/ 1초뒤에 효과 발생           */
+            transition-delay: 1s;
+        }
+/*        클릭했을 때는 hover가 아니고 active*/
+        a:active{
+            transform: translate(20px,20px);
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+<!--       #을 넣으면 페이지에서 버튼을 눌러도 페이지가 나오지 않음-->
+    <a href="#">Click</a>
+</body>
+</html>

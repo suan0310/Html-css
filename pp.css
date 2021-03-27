@@ -1,0 +1,9 @@
+/* css파일을 컴파일 하는 것 뿐만아니라 minify 역할도 해줌 
+    */
+body {
+  color: #00f;
+}
+body h1 {
+  font-size: 40px;
+  text-allien: left;
+}

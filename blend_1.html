@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<!--
+    blend란?
+    이미지와 이미지의 색상을 섞는 일
+-->
+<head>
+    <style>
+        .blend{
+            height: 400px;
+            border: 5px solid;
+            
+/*           255 (빨간색)에 투명도 0.5*/
+            background-color: rgba(255,0,0,0.5);
+            background-image: url('sample.png');
+            background-blend-mode: saturation;
+            transition: background-color 10s;
+        }
+        .blend:hover{
+            background-color: rgba(255,0,0,1);
+            
+/*            마우스를 올려놓으면 5초에걸쳐 화면의 색이 바뀐다.*/
+            transition: background-color 5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="blend">
+        
+    </div>
+</body>
+</html>

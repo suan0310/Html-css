@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<!--
+    filter란?
+    이미지, 텍스트, 그래픽 등 여러가지 효과를 줄수 있는 기능
+    ex)컬러 -> 흑백 or 블러
+    코드를 통해서 효과를 줌 -> 복사 ,결합등 다양한 동적인 효과 가능
+-->
+    
+<head>
+    <style>
+        image{
+/*            모든효과에서 1초동안 장면전환한다  */
+            transition: all 1s;
+        }
+/*       hover는 마우스를 올렸을 때 효과를 줌*/
+        img:hover{
+            filter: grayscale(50%) blur(3px);
+        }
+        h1{
+            filter: blur(3px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Mountain</h1>
+    <image src="sample.png" alt="이미지를 출력할 수 없습니다."></image>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<!--
+    Trandsform
+    어떤 엘리먼트가 있을때 그 엘리먼트의 크기 회전 비틀기 효과를 줌
+-->
+<head>
+    <style>
+        h1{
+            background-color: deepskyblue;
+            color: white;
+            display: inline-block;
+            padding: 5px;
+            font-size: 3rem;
+            margin: 100px;
+            
+/*            X축으로 0.5배 늘리고 Y축으로도 0.5배 늘리기
+            transform: scaleX(0.5) scaleY(0.5);
+            참고자료 : https://codepen.io/vineethtrv/full/XKKEgM */
+            transform: scale(1.5);
+           
+        }
+        h1:hover{
+            transform: scale(3);
+            
+/*            transform libary : http://elrumordelaluz.github.io/csshake/#1 
+                https://www.minimamente.com/project/magic/*/
+            transform-origin: 100% left top;
+            transition: all 3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Transform!</h1>
+</body>
+</html>

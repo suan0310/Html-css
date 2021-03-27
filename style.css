@@ -1,0 +1,4 @@
+/*css안에서도 import사용가능 */
+h1{
+    color: bisque;
+}
